@@ -57,18 +57,18 @@ echo
 project=$(basename `pwd`)
 #githubdir=$(basename $(dirname "$PWD" | tr '[:upper:]' '[:lower:]'))
 echo "-----------------------------------------------------------------------------"
-echo "this is project https://github.com/erikdubois/"$project
+echo "this is project https://github.com/ofuta/"$project
 echo "-----------------------------------------------------------------------------"
 
 git config --global pull.rebase false
 git config --global push.default simple
-git config --global user.name "Erik Dubois"
-git config --global user.email "erik.dubois@gmail.com"
+git config --global user.name "ofuta"
+git config --global user.email "ofutaru@proton.me"
 sudo git config --system core.editor nano
 #git config --global credential.helper cache
 #git config --global credential.helper 'cache --timeout=32000'
 
-git remote set-url origin git@github.com-edu:erikdubois/$project
+git remote set-url origin github.com:ofuta/$project
 
 echo
 tput setaf 3
